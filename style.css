@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.image{
+    background-image: url(images/leaf.jpg);
+    flex: 1;
+}
+
+.page{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.top,
+.mid,
+.bottom{
+    flex: 1;
+}
+
+.top,
+.bottom{
+    background-color: rgb(238, 238, 238);
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bottom button{
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    margin: 30px 0px 0px 50px
+}
+
+.bottom>div{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.bottom>div span{
+    color: #596D48;
+    font-weight: bold;
+    cursor: pointer;
+}
