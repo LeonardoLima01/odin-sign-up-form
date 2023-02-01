@@ -7,10 +7,18 @@
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="image"></div>
+        <div class="image">
+            <div class="text">
+                <div class="odinLogo"></div><span>SIGN-UP FORM</span>
+            </div>
+            <div class="author">
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
         <div class="page">
             <div class="top">
                 <div class="title">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
@@ -23,44 +31,50 @@
                     <div>
                         <form action="">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="First name" required>
+                            <input type="text" name="firstName" id="firstName" placeholder="First name" value='' required>
+                            <p>*Please enter your first name</p>
                         </form>
                     </div>
                     <div>
                         <form action="">
-                            <label for="firstName">LAST NAME</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Last name" required>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
+                            <p>*Please enter your last name</p>
                         </form>
                     </div>
                     <div>
                         <form action="">
-                            <label for="firstName">EMAIL</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Email" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <p>Please enter a valid email</p>
                         </form>
                     </div>
                     <div>
                         <form action="">
-                            <label for="firstName">PHONE NUMBER</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Phone number" required>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone number" pattern="[0-9]{10}" required>
+                            <p>Please enter a 10 digit number (ex: 1234567890)</p>
                         </form>
                     </div>
                     <div>
                         <form action="">
-                            <label for="firstName">PASSWORD</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Password" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                            <p>*Passwords do not match</p>
                         </form>
                     </div>
                     <div>
                         <form action="">
-                            <label for="firstName">CONFIRM PASSWORD</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Confirm password" required>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required>
+                            <p>*Passwords do not match</p>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="bottom">
                 <button type="submit">Create Account</button>
-                <div>Already have an account? <span>Log in</span></div>
+                <div>Already have an account? <span><a href="/">Log in</a></span></div>
             </div>
         </div>
     </div>

@@ -1,7 +1,15 @@
 *{
     box-sizing: border-box;
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+    color:#596D48;
 }
 
+a:hover{
+    color: #6b924c;
+}
 html{
     height: 100vh;
     margin: 0;
@@ -21,8 +29,9 @@ body{
 }
 
 .image{
-    background-image: url(images/leaf.jpg);
     flex: 1;
+    background-image: url(images/leaf.jpg);
+    background-size: 100% 100%;
 }
 
 .page{
@@ -55,7 +64,12 @@ body{
     color: white;
     font-weight: bold;
     width: 250px;
-    margin: 30px 0px 0px 50px
+    margin: 30px 0px 0px 50px;
+    cursor: pointer;
+}
+
+.bottom button:hover{
+    background-color: #66864c;
 }
 
 .bottom>div{
@@ -70,10 +84,10 @@ body{
 }
 
 .top>.title{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    width: 750px;
-    margin: 110px 0px 0px 50px;
+    width: 80%;
+    margin: 110px 0px 10px 50px;
 }
 
 .top{
@@ -83,29 +97,33 @@ body{
 }
 
 .top>.subtitle{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
-    margin-left: 50px;
+    width: 30%;
+    margin: 0px 0px 60px 50px
 }
 
 .mid>.title{
-    margin: 30px 0px 10px 50px;
-    font-size: 28px;
+    margin: 30px 0px 20px 50px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .forms>div>form{
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 .forms{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-bottom: 40px;
-    gap: 20px;
+    gap: 25px;
+}
+
+p{
+    margin: 0px;
 }
 
 .forms>div{
@@ -120,9 +138,60 @@ input{
 }
 
 input:focus{
-    border: 2px solid red !important;
+    outline: none;
+    border: 2px solid rgb(59, 121, 255);
 }
 
-form{
-    padding: 0px;
+input:focus:invalid{
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: white;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 20px;
+}
+
+.text>span{
+    font-family: 'Norse', sans-serif;
+    font-size: 6vw; 
+}
+
+.odinLogo{
+    background-image: url(images/odin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 140px;
+}
+
+.author{
+    margin-top: auto;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.author a{
+    color: rgb(0, 255, 0);
+}
+
+input+p{
+    visibility: hidden;
+    font-size: 11px;
+    color: red;
 }
