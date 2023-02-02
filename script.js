@@ -91,7 +91,7 @@ const checkPasswords = () =>{
             errorMessage2.style.cssText = 'visibility: visible'
         }
         // If password is all lowercase
-        else if (containsUppercase(password1) == false){
+        else if (containsUppercase(password1.value) == false){
             errorMessage2.style.cssText = 'visibility: hidden'
             errorMessage1.textContent = 'Missing 1 capital letter'
             errorMessage1.style.cssText = 'visibility: visible'
